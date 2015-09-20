@@ -1,8 +1,8 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-html_document:
-keep_md: true
+title: 'Reproducible Research: Peer Assessment 1'
+output:
+  html_document:
+    keep_md: yes
 ---
 
 ## Loading and preprocessing the data
@@ -19,7 +19,7 @@ hist( stepsDay$steps
      ,main="Total number of steps taken each day"
      ,xlab="Steps per day")
 abline(v=mean(stepsDay$steps),col="red",lty=3)
-meanSteps <- mean(stepsDay$steps)
+meanSteps <- mean(stepsDay$steps) 
 medianSteps <- median(stepsDay$steps)
 ```
 The mean of the total number of steps taken per day is: **`r prettyNum(meanSteps,big.mark=",")`**  
@@ -75,7 +75,7 @@ abline(v=mean(stepsDay_Imputed$steps),col="red",lty=3)
 meanSteps_Imputed <- mean(stepsDay_Imputed$steps)
 medianSteps_Imputed <- median(stepsDay_Imputed$steps)
 ```
-Let's compare the mean and median of steps from the original data set against the one with imputed values:
+Let's compare the mean and median of steps from the original data set against the one with imputed values. The following table shows the results from each analysis.
 
 | |Original Data Set|Imputed Data Set|  
 |:---|:---:|:---:|  
